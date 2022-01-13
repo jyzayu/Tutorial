@@ -1,0 +1,17 @@
+public class Main {  //class other part of the program
+
+    public static void main(String[] args) { // public method mean it's accessible from other part of the program
+        System.out.println("hi"); // main method of program should always be static
+          //void mean this method doesn't return a value
+          //f is short for field   c  is class m is method
+        int n = 123_456_789;
+        System.out.println(n);
+        Date now = new Date();
+        // OBJECT IS ISTANCE OF A CLASS NOW
+        // new operator + repeat the name of class to allocate memory for
+        //this variable and this is one of the differences between the primitve
+        //and reference types when declaring primitive we dont need to allocate memory
+
+        //class or object can use members using dot operator 
+
+    }
