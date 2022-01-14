@@ -1,0 +1,45 @@
+public static void main(String[] args) {
+        final byte MONTH_IN_YEAR = 12;  //use always meaningful name
+        final byte PERCENT = 100;   //use constants instead of using numbers
+        System.out.print("Principal : ");   // change println  to print , to input on the same line
+        Scanner scanner = new Scanner(System.in);   //reading userinput in terminal
+        //field is like a variable defined in a class
+        int principal = scanner.nextInt();
+        System.out.print("Annual Interest Rate : ");
+        double AI = scanner.nextDouble()/PERCENT;   //convert percent to number
+        double MI = AI/MONTH_IN_YEAR;   //monthly interest rate
+        System.out.print("Period (Year) : ");
+        byte period = scanner.nextByte();
+        int numberOfPayments = period*MONTH_IN_YEAR;
+        double mortgage = principal * ( MI*Math.pow(1+MI,numberOfPayments) ) / ( Math.pow(1+MI,numberOfPayments) -1);
+
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println("Mortgage : " +mortgageFormatted);
+      
+      
+      
+// implicit casting  byte > short > int > long > float > double
+                // these types are compatible because they are number.
+                //but String cannot cast a string to number, they are not compatible
+                // we  need to Integer class to convert string to number  (wrapper class , reference type
+                //Integer.parseInt   userinput is string,  we need wrapper class to add or subtract the userinput
+                //we should explicitly cast x to int
+                String num="1";
+                System.out.println(Integer.parseInt(num));
+                double x=1.1;
+                int a=1+(int)x;
+                System.out.println(a);
+                double y =x+2;
+                System.out.println(y);
+ 
+ 
+ 
+ NumberFormat percent = NumberFormat.getPercentInstance();
+        //NumberFormat is abstract so it doesnt use new operator.
+        //use gCI to create an instance of the NumberFormat class
+        // factory method creates new objects
+        String result = percent.format(0.5);
+        String currency = NumberFormat.getCurrencyInstance().format(1234567.891);
+        // method chaining  ,  use multiple method  2sentence -> 1sentence
+        System.out.println(currency);
+        System.out.println(result);
