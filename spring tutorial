@@ -1,0 +1,61 @@
+
+comment shortcut : ctrl + shift +/
+src >main>resources
+application.properties :  where we configure all the properties for our application
+when we connect to a real database
+static and templates  : when you are doing web development such as html css js and
+ all of that
+
+main>java>demoapplication
+when run program it doesnt work
+then
+open the pom.xml  where we have the springboot starter data jpa
+and comment this dependency
+then
+right click on the pom.xml and click Maven and then click reload project
+
+run demoapplication and go google and go address localhost:8080
+go see whitelabel error page   error 404 it's not found 
+so back to intellij  and click red square on left side of terminal to stop the server
+
+once we ready to connect our database we will add comment dependency
+close pom.xml and demoapplicationtest
+
+in DemoApplication.java 
+add @RestController  add publioc String hello(){  return "Hello World"; }
+we want to get something out from our server
+in order for this method to be served as arestful endpoint we have to annotate(주석달다)
+ (주서거럼 코드에 달아 클래스에 특별한 의미를 부여하거나 기능을 주입할수있다)
+(세가지 종류가 존재하는데 , JDK에 내장된 built-in annotation)
+(어노테이션에 대한 정보를 나타내기 위한 meta annotation)
+(개발자가 직접 만들어 내는 Custom Annotation)  it with at
+and then we have get mapping and so on  
+@RestController (annotation) makes this class as a restful 
+makes this class to serve rest endpoints
+
+to create a package
+main>java>  com.example.demo   >right click >new-package - com.exml.demo.student
+we have to pull every code which is student related
+how to structure your applications using springboot
+in ths packge  create new java class named student
+
+add @GetMapping 
+in student.java
+create student class  and generate constructor select none , select all , select all except id ,  
+and generate getter and setter  ,   toString()
+then in demoapplication.java
+public List<Student> hello(){
+  return List.of(
+              new Student(
+                  1L,
+                  "CJY",
+                  "moosou30@gmail.com",
+                  24,
+                  LocalDate.of(1999,Month.November,16)
+                  )
+                  )
+                }
+                  
+                  
+
+
