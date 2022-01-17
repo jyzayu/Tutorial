@@ -1,0 +1,41 @@
+
+sql_store
+Tables: where we store our data
+View : Virtual Cable combine data from multiple tables and put them in aview
+and this is especially pwerful for creating reports,
+Stored procedures ,Functions:
+program we stored inside of our database for querying data..
+you  can have a store procedure for getting all the customers in  a given city
+so we call that procedure and give me all the customer in san fransisco
+
+Tables-customers is the only place that we need to modify.
+we dont have to modify Tables-orders too . we use only customer-id
+this is how these databases work we refer to this db rdb
+we have multiple database which related each other.
+customer-id column in orders table, is related to customers table
+
+how to retrieve data from a single ponel. navigator panel there;s no bold letter
+it means none of these databases are selected for query
+first step to rate a query to get data from a db is to select a db
+the query that well write will be executed against db
+USE sql_store to use this db and execute script  or double click the db to select db
+query to retrieve all customers in this db: 
+
+SELECT customer_id  (specify the columns that we want to retrieve
+or all the column using SELECT *
+FROM customers:specify table that we want to query
+select all the customers id in given table(customers)
+use ; endpoint. when use multiple statement
+
+WHERE customer_id=1 : to filter the result and get the customer with ID 1
+we can sort the data by using ORDER BY clause , specify column we're going to sort
+-- : coment line
+we cannot change the order of these clauses otherwise we get syntax error
+SELECT
+FROM
+WHERE
+ORDER BY
+we dont have to write clause in new line you can put SELECT * FROM customers all in one line, 
+because whitespace ,line breaks and tabs are ignored
+and that's perfectly acceptable for simple query  ( SELECT * FROM customers)
+but as your queries get more complex, it's better to put each clause on a new line'
