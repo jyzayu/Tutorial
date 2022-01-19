@@ -58,3 +58,26 @@ html tag가 태그를 정의하는 계단식구조여서
         </div>
     </body>
 </html> 
+
+   <!-- h1 ~ h6 headline of bodyw
+   p i s paragraph it has new line when ended.
+   hr mean making headline to distinguish
+   js ignore enter and space so we use br and &nbsp ; 
+     -->
+<!-- tag block level : 자기가 속한영역의 너비를 모두 차지해 블록형성
+and inline : 자기에게 필요한 만큼만 차지
+개발자도구는 현재 보고있는 html문서를 볼수 있다, 개발자도구열면
+각 코드에 마우스를 대면 태그가 얼마만큼 영역을 차지하는지 보여주낟 
+h,p is block level  글이 끝난 오른쪾 모든영역을 다 차지하고있음 --> -->
+<!-- strong,em,mark is inline it is included in block level h,p
+inline doesnt affect on block of h,p so it is used 
+in blocklevel h,p  if define block p in  p 
+block 안에 층이 생긴다. -->
+<!-- img alt 이미지 유실되는 상황에 대응 하기위한 대체텍스트
+block container div 주제나눈 덩어리를 묶어놓아 
+it make better to do css stylesheet or js interaction
+hr is used to distinguish 주제
+inline container span 특정키워드 묶어 블록컨테이너같이
+js css 적용에 편리하다.  -->
+<!-- define name is used to js,server programming
+사용자가 입력한 데이터를 처리할떄ㅑ 쓰인다 -->
