@@ -1,0 +1,60 @@
+h,p ,hr ,br ,&nbsp; 
+img src="" alt="" width,height, title
+container div , span
+전역속성 id , class   -js css식별자
+a href="" target="_self" 
+li ol ul
+input = "" type="" name=""  - js,css
+select
+html tag가 태그를 정의하는 계단식구조여서
+이를 고려해 계단식으로 스타일을 정의하는 문서 css
+
+<!DOCTYPE html>  <!-- html start it has various tagc-->
+    <head>  
+        <meta charset="utf-8"> 한글영어 둘다 사용
+         메타데이터 검색엔진에 내용이나 해시태그처럼 적용되고 사용자 이용할떄 어떤 브라우저 버전으로 적용시키는지 ;
+         <meta http-equv="     IE="edge"
+         <meta keywords="animal , cute, challenge"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 모바일로 봐도 컴퓨터웹과 비슷하게 축소되지 않고 핸드폰넓이에 맞춰서 나타냄
+        <title>title of document </title>     
+    </head>
+
+    <body>  
+        <!-- text img  interface (button input ) 등 웹에 보여지게 나타난다.
+        cheer
+        <div id="study">
+        <h1 class="title">     studying economy is important  </h1>   헤더제목 큰텍스트   한칸 띄운다음 써진다 다음부터
+        <img src="images/병적증명서.png" alt="병적증명서" width="300" height="300" title="병적증명서">  이미지 나타내는법 title은 툴팁 마우스 갖다대면 뜬다ㅡ. alt는 이미지 에러시
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1fpNPbM6MV04TcFouRM9z7Dzd2c_ReAjqpA&usqp=CAU" 웹에서 이미지주소복사해서 나타낼수도있다.
+        alt="도라에몽이미지"  width="300" height="300" title="도라에몽귀여워">
+        </div>
+
+        <div id="workout">    div에는 class 쓰던데
+        <h1 class="title"> just do it</h1>
+        <p> do workout is important<br> 
+        </p>
+
+        <hr>
+        <div>
+            <h1 class="title"> 
+            </h1>
+            <a href="https://www.naver.com/" target="_blank"> 네이버로갑시다! </a><br>   링크만들기 인라인요소라 띄어쓰기 br해줘야함 주소 복사해서 넣어주면 됨 
+            <a href="file:///C:/Users/mooso/Desktop/sample/test.html" target="_blank">my html</a><br>  타겟은 새로운창 또는 현재창에서열꺼냐 
+            <a href="mailto:moosou30@naver.com">email</a><br>   전화나 이메일등도 할수있다 .
+            <a href="tel:010-8718-0243">010-8718-0243</a> 
+            <input name="text" type="text" maxlength="5"        placeholder 아무것도 안적었을떄 뜨는거 
+             placeholder="input your name" name="name"> <br><br>
+
+            <input name="push" type="button" value="PUSH" name="PUSH"><br>SELECT COLOR<br>  인풋은 버튼 컬러 레인지 날짜 , select textarea등 다양하게 있다
+             인풋에 네임 속성을 붙여 js나 css할떄 입력값을 처리ㅏ하는데 쓰여 필수다 . 네임들어가는데ㅐ 또 어디지  메타?
+             
+            <input name="color" type="color" min="0" max="100" step="10"><br><br>
+
+            <input name="score" type="range" ><br><br>
+
+            <input name="birth of date" type="date"> <br><br>
+            </div >
+
+        </div>
+    </body>
+</html> 
