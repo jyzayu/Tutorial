@@ -1,0 +1,23 @@
+const player = {
+    name:"CJY",
+    fat:"medium",
+    points:60,
+};
+object 와 list의 차이점 과 object 선언, 값 수정, 
+// player=false 는 에러지만  player.name= "C" 는 가능하다.
+//object는 리스트와 달리 name fat points등 각 요소들이 의미를 갖는다  여러요소를 묶어 저장하는것은 비슷하다. 
+ list는 여러요소를 넣었는데 그것이 무엇을 의미하는지 파악하는데 불편함이 있다. object는 무엇을 의미하는지
+// 식별할수있다. list는 파악하려면 주석으로 설명해야하는데 object는 그럴 필요가 없다 
+const player ={
+    name:"CJT"
+ } 
+와 같이 const 로 정의된 object 는 새로운 property 를 추가할수도 있고 , property의 값을 변경할수도 있다. 각요소를 property라고 부른다.
+// but player=false 와 같이 object의 모든 property의 값을 한번에 바꾸려고하는 것은 불가능하다. 
+
+
+
+
+Array
+// string false null undefined 
+// 데이터 정리하는 법 검색이나 삽입을 빨리 할수있는
+// 데이터 저장방법 기본적인 정리방법
