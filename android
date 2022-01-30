@@ -13,5 +13,19 @@
   디자인에서 버튼클릭후 우측에서 onclick 에 메서드 이름을 입력후 ,  MainActivity.java에서 해당 메서드를 생성하면 버튼 눌러서 메서드 실행가능 , 메서드실행하기위해
   import android.view.View 가 필요하다. xml code에서 onclick 에 오류뜬걸 마우스 갖다대면 해당 import가 필요함을 알수있다.
   
-  
-  
+  public void disable(View v){
+    View myView=findViewById(R.id.hello);
+    myView.setEnabled(false);
+    Button btn= (Button) myView ;   --- btn 변환을 안하고 myView.setText를 하지못한다  버튼으로 변환후 사용가능.
+    btn.setText="hi";
+ 
+ get input from user
+  public void handleText(View v1){
+    TextView t=findViewById(R.id.source);     View type은 getText method가 없어 Text input 입력창인 PlainText의 자료형 TextView 로 형변환후 getText 를 실행하고 
+    String input=t.getText().toString();     Log 를 실행할때 parameter가 str이어야 하니 String으로 바꾸어 입력값을 받아온다.
+    ((TextView)findViewById(R.id.output)).setText(input);      setText에 "blahblah"를 작성하는것이아닌 input으로해서 dynamic 하게 코드
+    Log.d("info",input);                     입력값을 logcat에서 찾아 보여준다. 
+    }
+    
+   형변환은 xml 에서 Component tree 에서 source에 마우스 갖다대면 EditText type임을 알수있다. TextView로 형변환해도 작동하지만 EditText가 더 구체적인 type이다. 
+   
