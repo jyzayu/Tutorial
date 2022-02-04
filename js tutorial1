@@ -33,6 +33,52 @@ queryselector 자주사용. 클래스네임앞에 . 을붙여줘야 클래스로
 id를 이용해 element를 검색할때도 quertSelector("#hi"); 등 #을붙여 id를 이용해 검색한다.  대부분 queryselector를 사용한다.
 queryselector를 이용해 첫번째 element의 하위에 속한 element 를 두번째에 넣어 상세하게 검색할수있다. 
 console.dir("headline"); 을통해 headline을 object형식으로 보여준다. 
+
+원하는 event를 찾는 방법
+구글에 찾고싶은 element의 이름 , 예를들어 h1관련 event를 listen하고싶은 경우, 
+h1 element element MDN(mozilla developer network)를 검색한다 MDN은 event 나와있는 사이트
+html 설명말고 javascript element를 찾아 본다 Web APIs 라 되있는 MDN 사이트에 접속
+js관점의 html의 heading element 를 의미한다.
+console.dir()을 이용해 찾을수도 있음
+
+
+
+
 여기서 onpaste onclick 등 on ~ 으로 표시된것들을 이벤트라고한다.
 ㅁ:ㅇ 꼴로 나타난것들은 모두 object들이다
 이 object들은 변경할수있다.
+
+
+function handleTitleClick(){
+    console.log(h1.style.color);       getter        we get the value 
+    h1.style.color= "blue";             setter        we set the value
+    console.log(h1.style.color); 출력해보면 blue만계속나온다.  어떤조건에서 tomato가 나오게하면된다
+    }
+ function handleTitleclick(){      -->
+    if (h1.style.color=="blue"){        const currentColor = h1.style.color;
+        h1.style.color="tomato";        let newColor;   empty let 
+        }else{
+        h1.style.color="blue";
+        }
+    }
+    
+    
+ function handleTitleClick(){           가독성을 높이기위해 변수두개를 더 만들더라도 변수의 이름을
+    const currentColor=h1.style.color;      관련 의미의 내용으로 설정하는 것이 이상적이구나.
+    let newColor;
+    if (currentColor ==="blue") {          현재 색, 새로운 색  변수
+        newColor = "tomato";
+        }else{
+        newColor = "blue";
+        }
+        h1.style.color = newColor;
+        }
+      이 함수에서는 스타일을 js파일에서 바꾸었지만 , js파일에서 style을 바꾸는 것은 권장되지않는다.
+      css 파일에서 style을 바꾸도록 한다. 
+      1.element 찾기
+      2.event listen하기
+      3.함수 작성 react to event   hide,show,change color
+      app을 어떻게 할지, 실제 어떻게 만드는지
+      
+      
+      
